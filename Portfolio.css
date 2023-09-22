@@ -39,12 +39,12 @@ z-index: -1;
 
 }
 .aboutinfo a{
-    font-size: 100px;
+     font-size: 127px;
     line-height: 100px;
     text-decoration: none;
     color: transparent;
     -webkit-text-stroke: 1px white;
-    background: url(images/name4.png);
+    background: url(images/name7.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 30s linear infinite;
