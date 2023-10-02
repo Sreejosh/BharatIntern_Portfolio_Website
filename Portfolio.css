@@ -7,12 +7,14 @@
 }
  body {
     min-height: 100vh;
-background-image: url("images/bg2.jpeg");
-background-color: black;
+ background-image: url("images/back5.jpg");
+background-color: rgb(255, 180, 6);
 background-repeat: no-repeat;
-background-size: cover;
+background-size:cover;
 position:relative;
+
 }
+
 .head{
 position: fixed;
 top: 0;
@@ -31,16 +33,16 @@ content: '';
 position: absolute;
 height: 100%;
 background-color: rgba(0,0,0,.1);
-backdrop-filter:blur(50px);
+backdrop-filter:blur(2px);
 top: 0;
 left: 0;
 width: 100%;
 z-index: -1;
 
 }
-.aboutinfo a{
-     font-size: 127px;
-    line-height: 100px;
+/* .aboutinfo a{
+    font-size: 180px;
+    line-height: 200px;
     text-decoration: none;
     color: transparent;
     -webkit-text-stroke: 1px white;
@@ -49,6 +51,67 @@ z-index: -1;
     background-position: 0 0;
     animation: back 30s linear infinite;
     
+} */
+.about{
+    padding: 4rem;
+}
+.aboutinfo a{
+    color: white;
+}
+.names a{
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 200px;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(images/slash5.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 30s linear infinite;
+    margin-left: 22rem;
+    
+
+}
+.intro{
+    text-align: center;
+    align-content: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro{
+    background-image: url(images/intro4.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+position:relative;
+width: 115.3rem;
+height: 60rem;
+
+    
+}
+.names p{
+    margin-left: 4rem;
+    font-size: 2rem;
+
+}
+
+.names {
+    margin-left: 3rem;
+    text-align: left;
+    color: white;
+    padding-bottom: 8rem;
+    
+}
+
+.names h1{
+   
+    padding-top: 18rem;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 22rem;
+   
+
 }
 
 @keyframes back{
@@ -64,7 +127,7 @@ height: 100%;
 top: 0;
 left: -100%;
 width: 100%;
-background: linear-gradient(90deg,transparent , rgba(255,255,255,.4) , transparent);
+background: linear-gradient(90deg,transparent , rgb(255, 187, 0) , transparent);
 
 transition: .5s;
 }
@@ -175,7 +238,7 @@ padding: 4rem;
 margin-left: 3rem;
 margin-right: 3rem;
 margin-top :8rem;
-background-color: rgba(0,0,0,0.5);
+background-color: rgba(0,0,0,0.4);
 
 }
 .aboutinfo img{
@@ -189,7 +252,23 @@ padding-bottom: 4rem;
 .skills{
 font-family: sans-serif;
 color:white;
-font-size: 4rem;
+font-size: 2rem;
+background-color: rgba(0,0,0,0.1);
+border-radius: 8rem;
+margin-left: 8rem;
+margin-right: 8rem;
+margin-top :4rem;
+/* background-image: url(images/intro4.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+position:relative; */
+}
+.projects{
+    background-color: rgba(0,0,0,0.1);
+border-radius: 8rem;
+margin-left: 8rem;
+margin-right: 8rem;
+margin-top :4rem;
 
 }
 .skillinfo{
@@ -208,6 +287,7 @@ margin-top :5rem;
 border-radius: 4rem;
 align-content: center;
 background:transparent;
+background-image: url(images/skills.jpg);
 color:white;
 grid-column-start: 1;
 grid-column-end: 2;
@@ -216,9 +296,9 @@ padding: 4rem;
 }
 .comm{
 border-radius: 2rem;
+background-image: url(images/skills.jpg);
 align-content: center;
 color:white;
-background:transparent;
 grid-column-start: 3;
 grid-column-end: 4;
 padding: 4rem;
@@ -227,32 +307,43 @@ padding: 4rem;
 .comm:hover{
 /* letter-spacing: 0.1rem; */
 /* background: var(--clr); */
-box-shadow: 0 0 70px rgb(253, 54, 87);
+box-shadow: 0 0 70px rgb(28, 9, 148);
 
 }
 .lang:hover{
 /* letter-spacing: 0.1rem; */
 /* background: var(--clr); */
-box-shadow: 0 0 70px rgb(253, 54, 87);
+box-shadow: 0 0 70px rgb(28, 9, 148);
 
+}
+.resume{
+    padding: 4rem;
+
+margin-top :5rem;
+}
+.contact{
+    padding: 4rem;
+margin-left: 3rem;
+margin-right: 3rem;
+margin-top :5rem;
 }
 .grid-container{
 display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto ;
         gap: 10px;
         padding: 10px;
 }
 
 .grid-contain-pr{
 display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto  ;
         gap: 10px;
-        padding: 10px;
+        padding: 5px;
 
 }
 .projects img{
-height: 300px;
-width: 500px;
+height: 250px;
+width: 450px;
 align-content: center;
 
 }
@@ -260,49 +351,53 @@ align-content: center;
 grid-column-start: 1;
 grid-column-end: 2;
 align-content: center;
-padding: 2rem;
+padding: 1rem;
 background-color: rgba(0,0,0,0.5);
 border-radius: 20px;
-
+background-image:url(images/skills.jpg);
 }
 .project1:hover{
 
-box-shadow: 0 0 70px rgb(253, 54, 87);
+box-shadow: 0 0 70px rgb(28, 9, 148);
 }
 .project2:hover{
 
-box-shadow: 0 0 70px rgb(253, 54, 87);
+box-shadow: 0 0 70px rgb(28, 9, 148);
 }
 .project3:hover{
 
-box-shadow: 0 0 70px rgb(253, 54, 87);
+box-shadow: 0 0 70px rgb(28, 9, 148);
 
 }
 .project2{
 grid-column-start: 3;
 grid-column-end: 4;
 align-content: center;
-padding: 2rem;
+padding: 1rem;
 background-color: rgba(0,0,0,0.5);
 border-radius: 20px;
-
+background-image:url(images/skills.jpg);
 
 }
 .project3{
 grid-column-start: 5;
 grid-column-end: 6;
 align-content: center;
-padding: 2rem;
+padding: 1rem;
 background-color: rgba(0,0,0,0.5);
+background-image:url(images/skills.jpg);
 border-radius: 20px;
 
 }
 .projects{
 color: white;
-padding: 2rem;
-margin-left: 2rem;
-margin-right: 3rem;
+/* margin-left: 2rem;
+margin-right: 3rem; */
 margin-top :5rem;
+padding: 4rem;
+background-color: rgba(0,0,0,0.1);
+
+
 
 }
 .projects h1{
@@ -322,7 +417,7 @@ padding: 1rem;
 .resume{
     color: white;
     padding: 4rem;
-margin-left: 1.5rem;
+margin-left: 8rem;
 margin-right: 3rem;
 margin-top :1rem;
 font-size: 2rem;
@@ -341,7 +436,6 @@ font-size: 2rem;
 }
 
 .resume input:hover{
-    letter-spacing: 0.05rem;
     box-shadow: 0 0 70px pink;
     cursor: pointer;
 }
@@ -417,7 +511,7 @@ font-size: 2rem;
     margin-left: 3.5rem;
 }
 .ad:hover{
-    box-shadow: 0 0 70px burlywood;
+    box-shadow: 0 0 70px rgb(73, 59, 40);
     cursor: pointer;
 
 }
@@ -427,8 +521,8 @@ font-size: 2rem;
     align-content: center;
     color: white;
     padding: 2rem;
-margin-left: 2rem;
-margin-right: 3rem;
+margin-left: 8rem;
+margin-right: 8rem;
 margin-top :1rem;
 
 }
